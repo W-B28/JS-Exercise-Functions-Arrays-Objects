@@ -45,22 +45,23 @@ function addNumbers(num1, num2) {
  * }
 
 */
-// let makePersonObject = (id, name, email) => ({
-//   id,
-//   name,
-//   email
-// });
 
-let obj = {
-  id: "id",
-  name: "name",
-  email: "email"
-};
+let makePersonObject = (id, name, email) => ({
+  id,
+  name,
+  email
+});
 
-function makePersonObject(id, name, email) {
-
-  return obj
-}
+// let obj = {
+//   id: id,
+//   name: "name",
+//   email: "email",
+// };
+//
+// function makePersonObject(id, name, email) {
+//
+//   return obj
+// }
 
 /**
  * ### Challenge `getName`
@@ -111,7 +112,7 @@ return "Hello, my name is " + person.name
 
 function makeSmartPerson(name){
   let smartPerson = {
-    name: "Bill",
+    name: name,
     sum: function(num1, num2) {
       return num1 + num2;
     },
@@ -176,9 +177,16 @@ function get3rdCar(inventory) {
  *
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
+ when checking into an array add '-1' at the end
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  // let car;
+  // for (let i =0; i < inventory.length; i++){
+  //   if(inventory[i] === index){
+  //     return car = inventory[i]
+  //   }
+  // }
+  return `This is a ${inventory[index].car_make} ${inventory[index].car_model}`;
 }
 
 /**
